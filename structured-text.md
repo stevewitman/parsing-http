@@ -23,6 +23,10 @@
 		</html>
 		
 * HTTP - HyperText Transfer Protocol
+  * The first line contains the status code
+  * Followed by the headers: (Server, Date, Content-Type ...)
+  * There is a blank line in between the list of headers and the body
+
 
 		HTTP/1.1 200 OK
 		Server: nginx/1.4.6 (Ubuntu)
