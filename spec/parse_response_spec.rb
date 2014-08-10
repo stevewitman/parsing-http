@@ -30,7 +30,7 @@ describe 'HTTPResponseParser' do
 
     it 'should return the header' do
       skip
-      expect(parse_response('lib/response_200.txt').header).to eq({"Server:"=>"nginx/1.4.6", "Date:"=>"Tue,", "Content-Type:"=>"text/html", "Last-Modified:"=>"Sun,", "Transfer-Encoding:"=>"chunked", "Connection:"=>"keep-alive", "Content-Encoding:"=>"gzip"})
+      expect(parse_response('lib/response_200.txt').header).to eq({"Server:"=>"nginx/1.4.6 (Ubuntu)", "Date:"=>"Tue, 06 May 2014 02:17:16 GMT", "Content-Type:"=>"text/html", "Last-Modified:"=>"Sun, 27 Apr 2014 04:03:41 GMT", "Transfer-Encoding:"=>"chunked", "Connection:"=>"keep-alive", "Content-Encoding:"=>"gzip"})
     end
 
     it 'should return Content-type: text' do
@@ -40,7 +40,7 @@ describe 'HTTPResponseParser' do
 
     it 'should return server' do
       skip
-      expect(parse_response('lib/response_200.txt').server).to eq("nginx/1.4.6")
+      expect(parse_response('lib/response_200.txt').server).to eq("nginx/1.4.6 (Ubuntu)")
     end
 
   end
