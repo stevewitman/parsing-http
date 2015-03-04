@@ -11,6 +11,27 @@ Run the rspec test 'parse_response_spec.rb" in the spec directory.
 
 Follow the error messages and inspect the individual tests to guide your development.
 
+## Goal
+
+To create a class / method to parse HTTP responses, and parse HTTP requests.
+
+The request object should have methods for:
+
+* path (string)
+* verb (string)
+* headers (returns a hash)
+* body (string)
+* querystring (string)
+* params (hash that includes: parsed query string, parsed body)
+* version
+
+The response object:
+
+* status (integer)
+* headers (hash)
+* body (string)
+* http version
+
 
 # Setup
 
